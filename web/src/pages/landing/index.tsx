@@ -29,29 +29,29 @@ function Landing() {
       <div id="page-landing-content" className="container">
         <div className="logo-container">
           <img src={logoImg} alt="Proffy" />
-          <h2>Sua plataforma de estudos online.</h2>
+          <h2>Your online study platform.</h2>
         </div>
-
+        <div className="landingImg">
         <img 
           src={landingImg}
           alt="Plataforma de estudos"
           className="hero-image"
         />
-
+        </div>
         <div className="buttons-container">
           <Link to="/study" className="study">
             <img src={studyIcon} alt="Estudar" />
-            Estudar
+            Estudy
           </Link>
 
           <Link to="/give-classes" className="give-classes">
             <img src={giveclassesIcon} alt="Dar Aulas" />
-            Dar Aulas
+            Teach
           </Link>
         </div>
 
         <span className="total-connections">
-          Total de {totalConnections} conexões já realizadas <img src={purpleheartIcon} alt="Coração Roxo" />
+          Total of {totalConnections} connections made <img src={purpleheartIcon} alt="Coração Roxo" />
         </span>
       
       </div>

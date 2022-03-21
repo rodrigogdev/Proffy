@@ -29,49 +29,44 @@ function TeacherList() {
 
   return (
     <div id="page-teacher-list" className="container">
-      <PageHeader title="Estes são os Proffys disponíveis.">
+      <PageHeader title="Those are the available Proffys.">
         <form id="search-teachers" onSubmit={searchTeachers} >
         <Select 
               name="subject"
-              label="Matéria"
+              label="Subject"
               value={subject}
               onChange={(e) => { setSubject(e.target.value) }}
               options={[
-                { value: 'Artes', label: 'Artes' },
-                { value: 'Biologia', label: 'Biologia' },
-                { value: 'Ciências', label: 'Ciências' },
-                { value: 'Educação Física', label: 'Educação Física' },
-                { value: 'Matemática', label: 'Matemática' },
-                { value: 'Física', label: 'Física' },
-                { value: 'Química', label: 'Química' },
-                { value: 'História', label: 'História' },
-                { value: 'Português', label: 'Português' },
+                { value: 'Math', label: 'Math' },
+                { value: 'English', label: 'English' },
+                { value: 'History', label: 'History' },
+                { value: 'Cience', label: 'Cience' },
               ]}
             />
           <Select 
               name="week-day"
-              label="Dia da Semana"
+              label="Week day"
               value={week_day}
               onChange={(e) => { setWeek_day(e.target.value) }}
               options={[
-                { value: '0', label: 'Domingo' },
-                { value: '1', label: 'Segunda-Feira' },
-                { value: '2', label: 'Terça-Feira' },
-                { value: '3', label: 'Quarta-Feira' },
-                { value: '4', label: 'Quinta-Feira' },
-                { value: '5', label: 'Sexta-Feira' },
-                { value: '6', label: 'Sábado' },
+                { value: '0', label: 'Sunday' },
+                { value: '1', label: 'Monday' },
+                { value: '2', label: 'Tuesday' },
+                { value: '3', label: 'Wednesday' },
+                { value: '4', label: 'Thursday' },
+                { value: '5', label: 'Friday' },
+                { value: '6', label: 'Saturday' },
               ]}
             />
           <Input 
             type="time"
             name="time"
-            label="Hora"
+            label="Time"
             value={time}
             onChange={(e) => { setTime(e.target.value) }}
           />
 
-          <button type="submit">Buscar</button>
+          <button type="submit">Find</button>
         </form>
       </PageHeader>
 

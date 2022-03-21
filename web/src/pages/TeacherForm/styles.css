@@ -116,12 +116,35 @@
 
   #page-teacher-form main .schedule-item {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 8fr 4fr 4fr 1fr;
     column-gap: 1.6rem;
   }
 
   #page-teacher-form main .schedule-item .input-block {
     margin-top: 0 !important;
+  }
+
+  #page-teacher-form main .schedule-item .button-holder{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+  }
+
+  #page-teacher-form main .schedule-item .button-holder .button{
+    font-size: 10px;
+    font-weight: 700;
+    color: #ff0000;
+    border: solid #ff0000 3px;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out 0.25s;
+  }
+
+  #page-teacher-form main .schedule-item .button-holder .button:hover{
+    background-color: #ff0000;
+    color: #fffff0;
   }
 
   #page-teacher-form main footer {
